@@ -10,4 +10,11 @@
     color: black;
     text-decoration: none;
   }
+  
+  &__arrow {
+    position: absolute;
+    color: $color-dark_grey;
+    font-size: 18px;
+    left: 25px;
+  }
 }
