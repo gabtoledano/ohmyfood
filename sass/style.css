@@ -130,12 +130,17 @@ body {
   padding: 20px 25px 20px 15px;
 }
 .card__icon {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 h2 {
@@ -170,7 +175,6 @@ h2 {
   text-decoration: none;
   padding: 15px 25px;
   border-radius: 25px;
-  transition: 0.3s;
 }
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.15);
@@ -284,6 +288,11 @@ section {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   position: relative;
 }
+.list__content, .list__title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .list__title {
   margin: 0 0 4px 0;
   font-size: 18px;
@@ -304,7 +313,7 @@ section {
   background-color: #99E2D0;
   color: #fff;
   font-size: 20px;
-  padding: 22px 20px;
+  padding: 23px 20px;
   border-radius: 0 15px 15px 0;
   right: 0;
   top: 0;
@@ -326,4 +335,31 @@ section {
 }
 .list:hover .list__icon {
   transform: rotate(360deg);
+}
+
+.btn-heart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-heart--solid {
+  position: absolute;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transform: scale(0);
+}
+.btn-heart:hover {
+  cursor: pointer;
+}
+.btn-heart:hover .btn-heart--solid {
+  transform: scale(1);
+}
+.btn-heart:hover .btn-heart--outline {
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }/*# sourceMappingURL=style.css.map */

@@ -72,6 +72,13 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   position: relative;
 
+  &__content,
+  &__title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
   &__title {
     margin: 0 0 4px 0;
     font-size: 18px;
@@ -95,7 +102,7 @@
     background-color: $color-tertiary;
     color: $color-white;
     font-size: 20px;
-    padding: 22px 20px;
+    padding: 23px 20px;
     border-radius: 0 15px 15px 0;
     right: 0;
     top: 0;
