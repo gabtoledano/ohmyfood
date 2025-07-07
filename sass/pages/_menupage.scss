@@ -2,6 +2,10 @@
   & img {
     width: 100%;
     height: 275px;
+    object-fit: cover;
+    @media (min-width: 1440px) {
+      height: 383px;
+    }
   }
 }
 
@@ -10,6 +14,11 @@
   border-radius: 40px 40px 0 0;
   position: relative;
   margin-top: -50px;
+  @media (min-width: 1440px) {
+    max-width: 1025px;
+    margin: 0 auto -50px auto;
+    top: -50px
+  }
 
   &__header {
     font-family: $font-shrikhand;
@@ -17,6 +26,10 @@
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
+    @media (min-width: 1440px) {
+      justify-content: center;
+      gap: 20px;
+    }
   }
 
   &__icon {
@@ -27,7 +40,10 @@
   &__lists {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    @media (min-width: 1440px) {
+      width: 62%;
+      margin: auto;
+    }
   }
 
   &__list {
@@ -56,7 +72,7 @@
   }
 
   &__button {
-    @include flexbox-center;
+    @include flexbox-center();
     margin: 45px 0 8px 0;
   }
 }
