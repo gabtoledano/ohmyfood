@@ -17,7 +17,7 @@
   @media (min-width: 1440px) {
     max-width: 1025px;
     margin: 0 auto -50px auto;
-    top: -50px
+    top: -50px;
   }
 
   &__header {
@@ -145,5 +145,11 @@
     .list__icon {
       transform: rotate(360deg);
     }
+  }
+}
+
+main {
+  @media (min-width: 1440px) {
+    animation: fadeIn 1s ease-in-out;
   }
 }
