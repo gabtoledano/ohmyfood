@@ -1,5 +1,4 @@
 .btn-heart {
-  position: relative;
   @include flexbox-center();
 
   &--solid {

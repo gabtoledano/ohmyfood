@@ -432,7 +432,6 @@ section {
 }
 
 .btn-heart {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
